@@ -77,13 +77,9 @@ def main():
             for x in range(numTypeFields):
                 mouse.click(Button.left, 1)
                 for y in range(fieldsInSet[x]):
-                    keyboard.press(str(berriesToUse[x]))
-                    keyboard.release(str(berriesToUse[x]))
                     for z in range(40):
                         mouse.click(Button.left, 1)
                         time.sleep(5/1000)
-                    keyboard.press(Key.right)
-                    keyboard.release(Key.right)
                     time.sleep(delayToLoad/1000)
         else:
             print("It seems like you may have entered neither \"parties\" or \"fields\". Maybe try again?")
